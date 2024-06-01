@@ -1,0 +1,61 @@
+@import "../_utils/variables";
+@import "../_base/typography";
+
+.product .card{
+    border: none !important;
+    background-color: $light-grey;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    .promo{
+        position: absolute;
+        width: 48px;
+        height: 48px;
+        border-radius: 50px;
+        background-color: $pink;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 77%;
+        bottom: 86%;
+    }
+    .nbr-promo{
+        margin: 0;
+        color: white;
+    }
+    .new{
+        position: absolute;
+        width: 48px;
+        height: 48px;
+        border-radius: 50px;
+        background-color: $green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 77%;
+        bottom: 86%;
+    }
+    .text-new{
+        margin: 0;
+        color: white;
+    }
+    .card-title{
+        font-weight: 600;
+        font-size: 25px;
+    }
+    .card-text{
+        color: $grey;
+    }
+    .ligne-prix{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between ;
+    }
+    .prix-promo{
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .prix{
+        color: $grey;
+        text-decoration: line-through;
+    }
+}

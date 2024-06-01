@@ -1,0 +1,88 @@
+@import "../_utils/variables";
+@import "../_base/typography";
+
+//!BANNIERE-ACCUEIL---------------------------------------------------------------------------
+
+.banniere-container {
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    position: relative;
+
+    .banniere-img {
+        width: 100%;
+        height: auto;
+        z-index: 1;
+        position: relative;
+    }
+
+    .card-banniere {
+        position: absolute;
+        width: 42em; //em adapte la taille selon la taille de l'élément parent
+        height: 27em;
+        top: 52%;
+        left: 74%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        border: none !important;
+        border-radius: 10px !important;
+        background-color: $light-yellow !important;
+    }
+
+    .card-body {
+        width: 90%;
+        height: 80%;
+        margin: 29px 15px 7px 14px;
+
+    }
+
+    .card-title {
+        font-size: 3.5em;
+        font-weight: 700;
+        color: $yellow;
+    }
+
+    .card-text {
+        font-size: 1.2em;
+    }
+
+    .btn {
+        background-color: $yellow;
+        color: white;
+        border-radius: 0px;
+        width: 245px;
+        height: 71px;
+        font-weight: 500;
+        font-size: 1.2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+//!MENU----------------------------------------------------------------------------------
+
+
+.menu{
+    .title{
+        color: $dark-grey;
+        font-weight: 700;
+    }
+    .text{
+        color: $grey;
+    }
+    .img{
+        width: 97%;
+    }
+    .sous-titre{
+        font-weight: 700;
+    }
+}
+
+//!PRODUCT----------------------------------------------------------------------------------
+
+.product{
+    .title{
+        color: $dark-grey;
+        font-weight: 700;
+    }
+}
