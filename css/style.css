@@ -12017,5 +12017,11 @@ font-family: "Poppins", sans-serif*/
   color: #333333;
   font-weight: 700;
 }
+.product .btn {
+  text-decoration: none;
+  color: #B88E2F;
+  border: 1px solid #B88E2F;
+  border-radius: 0px;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -85,4 +85,10 @@
         color: $dark-grey;
         font-weight: 700;
     }
+    .btn{
+        text-decoration: none;
+        color: $yellow;
+        border: 1px solid $yellow;
+        border-radius: 0px;
+    }
 }
