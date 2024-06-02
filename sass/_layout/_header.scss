@@ -1,29 +1,58 @@
-.container-fluid {
-    .header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 1030; // Assurez-vous que la barre de navigation est au-dessus des autres éléments
-      background-color: #f8f9fa; // Ajoutez un fond pour que le contenu ne soit pas visible derrière la barre de navigation
+    .navbar-brand{
+        color: #fff;
     }
-    .navbar-brand {
-        font-size: 1.5rem; // Ajustez la taille de la marque si nécessaire
-      }
-    
-    .navbar-nav {
-        .nav-link {
-          font-size: 1rem; // Ajustez la taille de la police des liens si nécessaire
-          margin-left: 10px;
-          margin-right: 10px;
+
+    .navbar {
+        transition: all 0.6s ease;
+        background-color: white;
+        position: fixed;
+        width: 100%;
+        z-index: 1030;
+    }
+
+    .navbar-toggler-icon{
+        background-color: $light-yellow !important;
+    }
+
+    .navbar-toggler{
+        background-color: $light-yellow !important;
+    }
+
+    .navbar-scrolled {
+        background: $light-yellow;
+        opacity: 0.5;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(3.6px);
+        -webkit-backdrop-filter: blur(3.6px);
+    }
+
+    .nav-item {
+        text-align: center;
+        font-weight: bolder;
+        text-transform: uppercase;
+        transition: all 0.4s ease;
+    }
+
+        .navbar-brand {
+            color: white;
+            font-size: 1.5rem; // Ajustez la taille de la marque si nécessaire
+        }
+        
+        .navbar-nav {
+            .nav-link {
+            font-size: 1rem; // Ajustez la taille de la police des liens si nécessaire
+            margin-left: 10px;
+            margin-right: 10px;
+            }
+
+            .icone{
+            width: 20px;
+            margin: 10px;  
+            }
         }
 
-        .icone{
-          width: 20px;
-          margin: 10px;  
-        }
-    }
-}
 
 
 .icone-logo{
@@ -38,10 +67,21 @@
 }
 
 .icone-milieu{
-    padding-left: 100px!important;
+    margin-left: 100px!important;
+    border-radius: 5px !important;
     color: black !important;
     font-family: "Poppins", sans-serif;
     font-size: 14px !important;
+    transition-duration: 0.5s !important; /* Ajoutez la transition ici */
+    transition-property: box-shadow !important;
+}
+
+.icone-milieu:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px !important;
+}
+
+.icone-milieu:active{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset !important;
 }
 
 

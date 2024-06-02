@@ -45,7 +45,10 @@
         font-size: 1.2em;
     }
 
-    .btn {
+    a{
+        text-decoration: none;
+    }
+    .bouton {
         background-color: $yellow;
         color: white;
         border-radius: 0px;
@@ -56,6 +59,18 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .bouton:hover{
+        transition-duration: 1s;
+        border: solid 3px $yellow;
+        background-color: $light-yellow;
+        color: $yellow;
+    }
+
+    .bouton:active{
+        box-shadow: rgba(184, 142, 47, 0.25) 0px 30px 60px -12px inset, rgba(255, 243, 227, 0.3) 0px 18px 36px -18px inset;
+        border: none;
     }
 }
 
@@ -90,5 +105,17 @@
         color: $yellow;
         border: 1px solid $yellow;
         border-radius: 0px;
+    }
+    .btn:hover{
+        transition-duration: 1s;
+        border: solid 3px $yellow;
+        background-color: $light-yellow;
+        color: $yellow;
+    }
+
+    .btn:active{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset !important;
+        border: none;
+        color: $yellow !important;
     }
 }

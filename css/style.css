@@ -11920,9 +11920,15 @@ font-family: "Poppins", sans-serif*/
   display: flex;
   justify-content: center;
   align-items: center;
+  visibility: hidden;
   /* Keyframes */
+  /* Définition de l'animation pour agrandir le bouton lorsqu'il est cliqué */
+  /* Définition de l'animation pour faire disparaître le texte du bouton */
+  /* Définition de l'animation pour faire apparaître une image au centre du bouton */
   /* Bouton */
-  /* Animation au focus */
+  /* Animation lorsque le bouton est focus */
+  /* Animation du texte du bouton lorsqu'il est focus */
+  /* Animation de l'image du bouton lorsqu'il est focus */
 }
 .product .card-shop .card-body {
   display: flex;
@@ -11931,46 +11937,46 @@ font-family: "Poppins", sans-serif*/
   flex-wrap: wrap;
 }
 @keyframes extend {
-  0% {
+  0% { /* Début de l'animation: taille de départ */
     width: 600px;
     height: 200px;
     border-radius: 100px;
   }
-  10% {
+  10% { /* Première étape de l'animation: augmentation de la taille */
     width: 610px;
     height: 210px;
-    background: #fff;
+    background: #fff; /* Changement de couleur de fond */
   }
-  20% {
+  20% { /* Deuxième étape de l'animation: réduction de la taille et changement de couleur */
     width: 600px;
     height: 200px;
-    background: #B88E2F;
+    background: #B88E2F; /* Utilisation d'une couleur définie ailleurs */
   }
-  100% {
+  100% { /* Fin de l'animation: retour à la taille initiale et couleur finale */
     width: 200px;
     height: 200px;
-    background: #B88E2F;
+    background: #B88E2F; /* Couleur finale */
   }
 }
 @keyframes disappear {
-  0% {
+  0% { /* Début de l'animation: texte entièrement visible */
     opacity: 1;
   }
-  20% {
+  20% { /* À 20% de l'animation: changement de couleur du texte vers blanc */
     color: #fff;
   }
-  100% {
+  100% { /* Fin de l'animation: texte complètement transparent */
     opacity: 0;
   }
 }
 @keyframes appear {
-  0% {
+  0% { /* Début de l'animation: image complètement invisible */
     opacity: 0;
   }
-  70% {
+  70% { /* À 70% de l'animation: image toujours invisible */
     opacity: 0;
   }
-  100% {
+  100% { /* Fin de l'animation: image complètement visible */
     opacity: 1;
   }
 }
@@ -11994,18 +12000,21 @@ font-family: "Poppins", sans-serif*/
   right: 0;
   bottom: 0;
   margin: auto;
+  /* Code pour gérer la transparence dans Internet Explorer */
+  /* Utilisation d'un filtre MS pour contrôler la transparence */
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  /* Utilisation d'un filtre alpha pour la transparence (anciennes versions d'IE) */
   filter: alpha(opacity=0);
   opacity: 0;
 }
 .product .card-shop .btn-shop:focus {
-  animation: extend 1s ease-in-out forwards;
+  animation: extend 1s ease-in-out forwards; /* Application de l'animation "extend" */
 }
 .product .card-shop .btn-shop:focus > span {
-  animation: disappear 1s ease-in-out forwards;
+  animation: disappear 1s ease-in-out forwards; /* Application de l'animation "disappear" */
 }
 .product .card-shop .btn-shop:focus > img {
-  animation: appear 1s ease-in-out forwards;
+  animation: appear 1s ease-in-out forwards; /* Application de l'animation "appear" */
 }
 @-webkit-keyframes {}
 @-webkit-keyframes extend {
@@ -12187,23 +12196,58 @@ font-family: "Poppins", sans-serif*/
   margin-bottom: 0;
 }
 
-.container-fluid .header, .container-sm .header, .container-md .header, .container-lg .header, .container-xl .header, .container-xxl .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1030;
-  background-color: #f8f9fa;
+.visible {
+  visibility: visible;
 }
-.container-fluid .navbar-brand, .container-sm .navbar-brand, .container-md .navbar-brand, .container-lg .navbar-brand, .container-xl .navbar-brand, .container-xxl .navbar-brand {
+
+.navbar-brand {
+  color: #fff;
+}
+
+.navbar {
+  transition: all 0.6s ease;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 1030;
+}
+
+.navbar-toggler-icon {
+  background-color: #FFF3E3 !important;
+}
+
+.navbar-toggler {
+  background-color: #FFF3E3 !important;
+}
+
+.navbar-scrolled {
+  background: #FFF3E3;
+  opacity: 0.5;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.6px);
+  -webkit-backdrop-filter: blur(3.6px);
+}
+
+.nav-item {
+  text-align: center;
+  font-weight: bolder;
+  text-transform: uppercase;
+  transition: all 0.4s ease;
+}
+
+.navbar-brand {
+  color: white;
   font-size: 1.5rem;
 }
-.container-fluid .navbar-nav .nav-link, .container-sm .navbar-nav .nav-link, .container-md .navbar-nav .nav-link, .container-lg .navbar-nav .nav-link, .container-xl .navbar-nav .nav-link, .container-xxl .navbar-nav .nav-link {
+
+.navbar-nav .nav-link {
   font-size: 1rem;
   margin-left: 10px;
   margin-right: 10px;
 }
-.container-fluid .navbar-nav .icone, .container-sm .navbar-nav .icone, .container-md .navbar-nav .icone, .container-lg .navbar-nav .icone, .container-xl .navbar-nav .icone, .container-xxl .navbar-nav .icone {
+.navbar-nav .icone {
   width: 20px;
   margin: 10px;
 }
@@ -12219,10 +12263,21 @@ font-family: "Poppins", sans-serif*/
 }
 
 .icone-milieu {
-  padding-left: 100px !important;
+  margin-left: 100px !important;
+  border-radius: 5px !important;
   color: black !important;
   font-family: "Poppins", sans-serif;
   font-size: 14px !important;
+  transition-duration: 0.5s !important; /* Ajoutez la transition ici */
+  transition-property: box-shadow !important;
+}
+
+.icone-milieu:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px !important;
+}
+
+.icone-milieu:active {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset !important;
 }
 
 /*font-family: "Montserrat", sans-serif
@@ -12263,7 +12318,10 @@ font-family: "Poppins", sans-serif*/
 .banniere-container .card-text {
   font-size: 1.2em;
 }
-.banniere-container .btn {
+.banniere-container a {
+  text-decoration: none;
+}
+.banniere-container .bouton {
   background-color: #B88E2F;
   color: white;
   border-radius: 0px;
@@ -12274,6 +12332,16 @@ font-family: "Poppins", sans-serif*/
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.banniere-container .bouton:hover {
+  transition-duration: 1s;
+  border: solid 3px #B88E2F;
+  background-color: #FFF3E3;
+  color: #B88E2F;
+}
+.banniere-container .bouton:active {
+  box-shadow: rgba(184, 142, 47, 0.25) 0px 30px 60px -12px inset, rgba(255, 243, 227, 0.3) 0px 18px 36px -18px inset;
+  border: none;
 }
 
 .menu .title {
@@ -12299,6 +12367,17 @@ font-family: "Poppins", sans-serif*/
   color: #B88E2F;
   border: 1px solid #B88E2F;
   border-radius: 0px;
+}
+.product .btn:hover {
+  transition-duration: 1s;
+  border: solid 3px #B88E2F;
+  background-color: #FFF3E3;
+  color: #B88E2F;
+}
+.product .btn:active {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset !important;
+  border: none;
+  color: #B88E2F !important;
 }
 
 /*# sourceMappingURL=style.css.map */

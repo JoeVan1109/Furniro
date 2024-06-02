@@ -72,6 +72,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    visibility: hidden;
+    
+    
 
     .card-body{
         display: flex;
@@ -80,52 +83,54 @@
         flex-wrap: wrap;
     }
     
-        /* Keyframes */
+    /* Keyframes */
+
+    /* Définition de l'animation pour agrandir le bouton lorsqu'il est cliqué */
     @keyframes extend {
-        0% {
+        0% { /* Début de l'animation: taille de départ */
             width: 600px;
             height: 200px;
             border-radius: 100px;
         }
-        10% {
+        10% { /* Première étape de l'animation: augmentation de la taille */
             width: 610px;
             height: 210px;
-            background: #fff;
-
+            background: #fff; /* Changement de couleur de fond */
         }
-        20% {
+        20% { /* Deuxième étape de l'animation: réduction de la taille et changement de couleur */
             width: 600px;
             height: 200px;
-            background: $yellow;
-
+            background: $yellow; /* Utilisation d'une couleur définie ailleurs */
         }
-        100% {
+        100% { /* Fin de l'animation: retour à la taille initiale et couleur finale */
             width: 200px;
             height: 200px;
-            background: $yellow;
+            background: $yellow; /* Couleur finale */
         }
     }
 
+   /* Définition de l'animation pour faire disparaître le texte du bouton */
     @keyframes disappear {
-        0% {
+        0% { /* Début de l'animation: texte entièrement visible */
             opacity: 1;
         }
-        20% {
+        20% { /* À 20% de l'animation: changement de couleur du texte vers blanc */
             color: #fff;
         }
-        100% {
+        100% { /* Fin de l'animation: texte complètement transparent */
             opacity: 0;
         }
     }
 
+    /* Définition de l'animation pour faire apparaître une image au centre du bouton */
     @keyframes appear {
-        0% {
+        0% { /* Début de l'animation: image complètement invisible */
             opacity: 0;
         }
-        70% {
+        70% { /* À 70% de l'animation: image toujours invisible */
             opacity: 0;
         }
-        100% {
+        100% { /* Fin de l'animation: image complètement visible */
             opacity: 1;
         }
     }
@@ -154,21 +159,27 @@
         right: 0;
         bottom: 0;
         margin: auto;
+        /* Code pour gérer la transparence dans Internet Explorer */
+        /* Utilisation d'un filtre MS pour contrôler la transparence */
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        /* Utilisation d'un filtre alpha pour la transparence (anciennes versions d'IE) */
         filter: alpha(opacity=0);
         opacity: 0
     }
-    /* Animation au focus */
+
+    /* Animation lorsque le bouton est focus */
     .btn-shop:focus {
-        animation: extend 1s ease-in-out forwards;
+        animation: extend 1s ease-in-out forwards; /* Application de l'animation "extend" */
     }
 
+    /* Animation du texte du bouton lorsqu'il est focus */
     .btn-shop:focus > span {
-        animation: disappear 1s ease-in-out forwards;
+        animation: disappear 1s ease-in-out forwards; /* Application de l'animation "disappear" */
     }
 
+    /* Animation de l'image du bouton lorsqu'il est focus */
     .btn-shop:focus > img {
-        animation: appear 1s ease-in-out forwards;
+        animation: appear 1s ease-in-out forwards; /* Application de l'animation "appear" */
     }
 
         
@@ -356,6 +367,10 @@
         }
     }
 
+}
+
+.visible{
+    visibility: visible;
 }
 
 
