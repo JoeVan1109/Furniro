@@ -1,0 +1,42 @@
+@import "../_base/typography";
+@import "../_utils/variables";
+
+.inspiration{
+    background-color: $light-yellow;
+
+    .carousel{
+        width: 65%;
+            .img{
+                    width: 100%;
+                }
+    }
+
+    .carousel-text{
+        margin-top: 19%;
+            a{
+                text-decoration: none;
+            }
+            .bouton {
+                background-color: $yellow;
+                color: white;
+                border-radius: 0px;
+                width: 245px;
+                height: 71px;
+                font-weight: 500;
+                font-size: 1.2em;;
+            }
+        
+            .bouton:hover{
+                transition-duration: 1s;
+                border: solid 3px $yellow;
+                background-color: $light-yellow;
+                color: $yellow;
+            }
+        
+            .bouton:active{
+                box-shadow: rgba(184, 142, 47, 0.25) 0px 30px 60px -12px inset, rgba(255, 243, 227, 0.3) 0px 18px 36px -18px inset;
+                border: none;
+            }
+    }
+
+}
