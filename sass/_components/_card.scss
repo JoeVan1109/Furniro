@@ -6,6 +6,7 @@
     background-color: $light-grey;
     font-family: "Poppins", sans-serif;
     position: relative;
+    z-index: 1;
     .promo{
         position: absolute;
         width: 48px;
@@ -58,4 +59,55 @@
         color: $grey;
         text-decoration: line-through;
     }
+}
+
+//?CARD-SHOP--------------------------------------------------------------------------
+
+.product .card-shop{
+    position: absolute;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 0 !important;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .card-body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .btn-shop{
+        position: relative;
+        top: 12%;
+        border-radius: 0 !important;
+        border: none;
+        background-color: white;
+        color: $yellow;
+        font-weight: 600;
+        width: 100%;
+        height: 14%;
+    }
+
+    .lien-shop{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        position: relative;
+        bottom: 20%;
+        .lien{
+            display: flex;
+            flex-wrap: nowrap;
+            text-decoration: none;
+            color: white;
+            .text{
+                margin-bottom: 0;
+            }
+
+        }
+    }
+
 }

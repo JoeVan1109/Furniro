@@ -11856,6 +11856,7 @@ font-family: "Poppins", sans-serif*/
   background-color: #F4F5F7;
   font-family: "Poppins", sans-serif;
   position: relative;
+  z-index: 1;
 }
 .product .card .promo {
   position: absolute;
@@ -11908,6 +11909,50 @@ font-family: "Poppins", sans-serif*/
 .product .card .prix {
   color: #666666;
   text-decoration: line-through;
+}
+
+.product .card-shop {
+  position: absolute;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 0 !important;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product .card-shop .card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.product .card-shop .btn-shop {
+  position: relative;
+  top: 12%;
+  border-radius: 0 !important;
+  border: none;
+  background-color: white;
+  color: #B88E2F;
+  font-weight: 600;
+  width: 100%;
+  height: 14%;
+}
+.product .card-shop .lien-shop {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  position: relative;
+  bottom: 20%;
+}
+.product .card-shop .lien-shop .lien {
+  display: flex;
+  flex-wrap: nowrap;
+  text-decoration: none;
+  color: white;
+}
+.product .card-shop .lien-shop .lien .text {
+  margin-bottom: 0;
 }
 
 .container-fluid .header, .container-sm .header, .container-md .header, .container-lg .header, .container-xl .header, .container-xxl .header {
