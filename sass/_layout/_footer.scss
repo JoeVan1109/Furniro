@@ -1,0 +1,67 @@
+@import "../_utils/variables";
+@import "../_base/typography";
+
+.footer{
+    margin-top: 7% !important;
+    margin-left: 4% !important;
+    letter-spacing: 1px;
+
+
+    .footer-left{
+        .titre{
+            font-weight: 700;
+            margin-bottom: 58px;
+        }
+        .adress{
+            color: $grey;
+            margin-bottom: 0px !important;
+        }
+    }
+
+    .footer-milieu{
+        .grey-title{
+            color: $grey;
+        }
+        .lien{
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+            margin-top: 10%;
+            margin-bottom: 10%;
+        }
+    }
+
+    .footer-right{
+        .grey-title{
+            color: $grey;
+        }
+        
+        .newsletter{
+            #email{
+                color: $grey;
+                background-color: transparent;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-bottom: solid 2px black;
+                margin-right: 10px;
+                margin-top: 34px;
+            }
+            #submit{
+                background-color: transparent;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-bottom: solid 2px black;
+                
+            }
+        }
+    }
+
+    .barre{
+        width: 95%;
+        border: solid 1px $grey;
+        margin-top: 28px;
+    }
+    
+}
