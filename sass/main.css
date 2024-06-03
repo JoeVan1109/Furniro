@@ -12275,6 +12275,13 @@ font-family: "Poppins", sans-serif*/
   -o-object-fit: contain;
      object-fit: contain;
 }
+.inspiration .carousel-caption {
+  color: white;
+  background-color: #B88E2F;
+}
+.inspiration .carousel-caption h5, .inspiration .carousel-caption .h5 {
+  font-weight: 600;
+}
 .inspiration .carousel-text {
   margin-top: 18%;
 }
