@@ -12208,12 +12208,19 @@ font-family: "Poppins", sans-serif*/
 }
 .inspiration .carousel {
   width: 65%;
+  margin-left: 25%;
 }
 .inspiration .carousel .img {
-  width: 100%;
+  width: 106%;
+  object-fit: contain;
 }
 .inspiration .carousel-text {
-  margin-top: 19%;
+  margin-top: 18%;
+}
+.inspiration .carousel-text .title {
+  color: #333333;
+  font-weight: 700;
+  margin-right: 10%;
 }
 .inspiration .carousel-text a {
   text-decoration: none;

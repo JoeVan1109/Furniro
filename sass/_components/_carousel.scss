@@ -6,13 +6,24 @@
 
     .carousel{
         width: 65%;
+        margin-left: 25%;
             .img{
-                    width: 100%;
+                    width: 106%;
+                    object-fit: contain;
                 }
     }
 
     .carousel-text{
-        margin-top: 19%;
+        margin-top: 18%;
+
+        .title{
+            color: $dark-grey;
+            font-weight: 700;
+            margin-right: 10%;
+        }
+        .text{
+            
+        }
             a{
                 text-decoration: none;
             }
