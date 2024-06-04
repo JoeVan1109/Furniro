@@ -9,6 +9,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -12543,4 +12544,45 @@ font-family: "Poppins", sans-serif*/
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset !important;
   border: none;
   color: #B88E2F !important;
+}
+
+/*font-family: "Montserrat", sans-serif
+font-family: "Poppins", sans-serif*/
+.container {
+  font-family: "Poppins", sans-serif;
+}
+.container .banniere-img .banniere-shop {
+  position: relative;
+}
+.container .banniere-img .banniere-shop .bloc-banniere {
+  position: absolute;
+  top: 50%;
+}
+.container .banniere-img .banniere-outils {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #F9F1E7;
+}
+.container .banniere-img .banniere-outils .icone-filter {
+  margin: 1rem;
+  height: 20px;
+}
+.container .banniere-img .banniere-outils .text-filter {
+  margin: 1rem;
+  height: 20px;
+}
+.container .banniere-img .banniere-outils .icone-point {
+  margin: 1rem;
+  height: 20px;
+}
+.container .banniere-img .banniere-outils .icone-carre {
+  margin: 1rem;
+  height: 20px;
+  border-right: solid 2px #9F9F9F;
+  padding-right: 30px;
+}
+.container .banniere-img .banniere-outils .text-showing {
+  margin: 1rem;
+  height: 20px;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funiro</title>
+
+    <link href="./css/style.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="container fluid overflow-x-hidden p-0 m-0 mw-100">
+
+<!--! ------------------------------------------------BARRE NAVIGATION------------------------------------------------ -->
+
+        <nav class="navbar navbar-top  navbar-expand-lg">
+
+            <div class="container-fluid header">
+                <!-- Logo et nom de la marque à gauche -->
+                <div class="d-flex align-items-center">
+
+                    <img class="icone-logo mx-2" src="./asset/logo.svg" alt="logo">
+                    <a class="navbar-brand text-logo" href="#">Funiro</a>
+
+                </div>
+
+                <!-- Bouton de toggler pour la navigation responsive -->
+                <button class="navbar-toggler" id="btnNav" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Liens de navigation et icônes -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <div class="navbar-nav mx-auto">
+                    
+                        <a class="icone-milieu nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="icone-milieu nav-link" href="#">Shop</a>
+                        <a class="icone-milieu nav-link" href="#">About</a>
+                        <a class="icone-milieu nav-link" href="#">Contact</a>
+
+                    </div>
+
+                    <div class="navbar-nav ms-3 me-5">
+
+                        <a class="nav-link" aria-current="page" href="#"><img class="icone" src="./asset/icone-perso.svg" alt="perso"></a>
+                        <a class="nav-link" href="#"><img class="icone" src="./asset/icone-search.svg" alt="search"></a>
+                        <a class="nav-link" href="#"><img class="icone" src="./asset/icone-heart.svg" alt="heart"></a>
+                        <a class="nav-link" aria-disabled="true"><img class="icone" src="./asset/icone-panier.svg" alt="panier"></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+<!--! ------------------------------------------------BANNIERE------------------------------------------------ -->
+
+        <div class="row banniere-img">
+
+            <div class="col-12 banniere-shop d-flex justify-content-center align-items-center">
+
+                <img class="img-banniere mt-5" src="./asset/page-shop/banniere-shop.svg" alt="banniere">
+
+                <div class="bloc-banniere">
+                    <h1 class="titre">Shop</h1>
+                    <p class="texte"><b>Home ></b> Shop</p>
+                </div>
+
+            </div>
+
+            
+
+            <div class="col-6 d-flex justify-content-center align-item banniere-outils">
+
+                <img class="icone-filter" src="./asset/page-shop/filter-icone.svg" alt="filter">
+                <p class="text-filter">Filter</p>
+                <img class="icone-point" src="./asset/page-shop/four-point-icone.svg" alt="point">
+                <img class="icone-carre" src="./asset/page-shop/carre-icone.svg" alt="carre">
+
+                <p class="text-showing"> Showing 1-16 of 32 results</p>
+
+            </div>
+
+            <div class="col-6">
+
+            </div>
+
+        </div>
+
+
+
+            
+
+<!--! ------------------------------------------------SHOP--------------------------------------------------- -->
+
+        <div class="row product">
+
+<!--*----------------------------------------------First ligne------------------------------------------- -->
+
+            <div class="col-12 d-flex flex-nowrap justify-content-center align-items-center">
+
+<!--? -----------------------------------------------Firt card-------------------------------------------- -->
+
+                <div class="card card-btn m-2" style="width: 18rem;">
+
+                    <div class="promo">
+                        <p class="nbr-promo">-30%</p>
+                    </div>
+
+                    <img src="./asset/page-accueil/product-1.svg" class="img" alt="product-1">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">Syltherine</h5>
+                        <p class="card-text">Stylish cafe chair</p>
+
+                        <div class="ligne-prix">
+                            <p class="prix-promo">Rp 2.500.000</p>
+                            <p class="prix">Pr 3.500.000</p>
+                        </div>
+
+                    </div>
+
+                
+
+<!-- ------------------------------------------------Card cachée-------------------------------------------- -->
+
+                        <div class="card card-shop" style="width: 18rem;">
+                        
+                            <div class="card-body">
+
+                                <div class="cont">  
+                                    <button class="btn-shop"><span>Add to cart</span><img src="https://i.cloudup.com/2ZAX3hVsBE-3000x3000.png" height="62" width="62"></button>
+                                </div>
+
+                                <div class="lien-shop ">
+                                    <a class="lien m-2" href="#"><img src="./asset/page-accueil/share-white.svg" alt="share"><p class="text ms-1">Share</p></a>
+                                    <a class="lien m-2" href="#"><img src="./asset/page-accueil/compare-white.svg" alt="compare"><p class="text ms-1">Compare</p></a>
+                                    <a class="lien m-2" href="#"><img src="./asset/page-accueil/heart-white.svg" alt="heart"><p class="text ms-1">Like</p></a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                </div>
+<!--? -----------------------------------------------Second card-------------------------------------------- -->
+
+                <div class="card card-btn m-2" style="width: 18rem;">
+
+                    <img src="./asset/page-accueil/product-2.svg" class="img" alt="product-2">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">Leviosa</h5>
+                        <p class="card-text">Stylish cafe chair</p>
+                        <p class="prix-promo">Rp 2.500.000</p>
+
+                    </div>
+
+<!-- ------------------------------------------------Card cachée-------------------------------------------- -->
+
+                    <div class="card card-shop" style="width: 18rem;">
+                                        
+                        <div class="card-body">
+
+                            <div class="cont">  
+                                <button class="btn-shop"><span>Add to cart</span><img src="https://i.cloudup.com/2ZAX3hVsBE-3000x3000.png" height="62" width="62"></button>
+                            </div>
+
+                            <div class="lien-shop ">
+                                <a class="lien m-2" href="#"><img src="./asset/page-accueil/share-white.svg" alt="share"><p class="text ms-1">Share</p></a>
+                                <a class="lien m-2" href="#"><img src="./asset/page-accueil/compare-white.svg" alt="compare"><p class="text ms-1">Compare</p></a>
+                                <a class="lien m-2" href="#"><img src="./asset/page-accueil/heart-white.svg" alt="heart"><p class="text ms-1">Like</p></a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+<!--? -----------------------------------------------Troisieme card-------------------------------------------- -->
+
+                <div class="card card-btn m-2" style="width: 18rem;">
+
+                    <div class="promo">
+                        <p class="nbr-promo">-50%</p>
+                    </div>
+
+                    <img src="./asset/page-accueil/product-3.svg" class="imgp" alt="product-3">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">Lolito</h5>
+                        <p class="card-text">Luxury big sofa</p>
+
+                        <div class="ligne-prix d-flex flex-nowrap">
+                            <p class="prix-promo">Rp 7.000.000</p>
+                            <p class="prix">Pr 14.000.000</p>
+                        </div>
+
+                    </div>
+
+<!-- ------------------------------------------------Card cachée-------------------------------------------- -->
+
+                    <div class="card card-shop" style="width: 18rem;">
+                                        
+                        <div class="card-body">
+
+                            <div class="cont">  
+                                <button class="btn-shop"><span>Add to cart</span><img src="https://i.cloudup.com/2ZAX3hVsBE-3000x3000.png" height="62" width="62"></button>
+                            </div>
+
+                            <div class="lien-shop ">
+                                <a class="lien m-2" href="#"><img src="./asset/page-accueil/share-white.svg" alt="share"><p class="text ms-1">Share</p></a>
+                                <a class="lien m-2" href="#"><img src="./asset/page-accueil/compare-white.svg" alt="compare"><p class="text ms-1">Compare</p></a>
+                                <a class="lien m-2" href="#"><img src="./asset/page-accueil/heart-white.svg" alt="heart"><p class="text ms-1">Like</p></a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+<!--? -----------------------------------------------Quatrieme card-------------------------------------------- -->
+
+
+                <div class="card card-btn m-2" style="width: 18rem;">
+
+                    <div class="new">
+                        <p class="text-new">NEW</p>
+                    </div>
+
+                    <img src="./asset/page-accueil/product-4.svg" class="img" alt="product-4">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">Respira</h5>
+                        <p class="card-text">Outdoor bar table and stool</p>
+                        <p class="prix-promo">Rp 500.000</p>
+
+                    </div>
+                    
+<!-- ------------------------------------------------Card cachée-------------------------------------------- -->
+
+                    <div class="card card-shop" style="width: 18rem;">
+                                        
+                        <div class="card-body">
+
+                            <div class="cont">  
+                                <button class="btn-shop"><span>Add to cart</span><img src="https://i.cloudup.com/2ZAX3hVsBE-3000x3000.png" height="62" width="62"></button>
+                            </div>
+
+                            <div class="lien-shop ">
+                                <a class="lien m-2" href="#"><img src="./asset/page-accueil/share-white.svg" alt="share"><p class="text ms-1">Share</p></a>
+                                <a class="lien m-2" href="#"><img src="./asset/page-accueil/compare-white.svg" alt="compare"><p class="text ms-1">Compare</p></a>
+                                <a class="lien m-2" href="#"><img src="./asset/page-accueil/heart-white.svg" alt="heart"><p class="text ms-1">Like</p></a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+<!--*----------------------------------------------Second ligne------------------------------------------- -->
+
+            <div class="col-12 d-flex flex-nowrap justify-content-center align-items-center">
+
+<!--? -----------------------------------------------Cinquieme card-------------------------------------------- -->
+
+                <div class="card card-btn m-2" style="width: 18rem;">
+
+                    <img src="./asset/page-accueil/product-5.svg" class="img" alt="product-5">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">Grifo</h5>
+                        <p class="card-text">Night lamp</p>
+                        <p class="prix-promo">Rp 1.500.000</p>
+
+                    </div>
+
+<!-- ------------------------------------------------Card cachée-------------------------------------------- -->
+
+                    <div class="card card-shop" style="width: 18rem;">
+                                        
+                        <div class="card-body">
+
+                            <div class="cont">  
+                                <button class="btn-shop"><span>Add to cart</span><img src="https://i.cloudup.com/2ZAX3hVsBE-3000x3000.png" height="62" width="62"></button>
+                            </div>
+
+                            <div class="lien-shop ">
+                                <a class="lien m-2" href="#"><img src="./asset/page-accueil/share-white.svg" alt="share"><p class="text ms-1">Share</p></a>
+                                <a class="lien m-2" href="#"><img src="./asset/page-accueil/compare-white.svg" alt="compare"><p class="text ms-1">Compare</p></a>
+                                <a class="lien m-2" href="#"><img src="./asset/page-accueil/heart-white.svg" alt="heart"><p class="text ms-1">Like</p></a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+<!--? -----------------------------------------------Sixieme card-------------------------------------------- -->
+
+                <div class="card card-btn m-2" style="width: 18rem;">
+
+                    <div class="new">
+                        <p class="text-new">NEW</p>
+                    </div>
+
+                    <img src="./asset/page-accueil/product-6.svg" class="img" alt="produc-6">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">Muggo</h5>
+                        <p class="card-text">Small mug</p>
+                        <p class="prix-promo">Rp 150.000</p>
+
+                    </div>
+
+<!-- ------------------------------------------------Card cachée-------------------------------------------- -->
+
+                    <div class="card card-shop" style="width: 18rem;">
+                                        
+                        <div class="card-body">
+
+                            <div class="cont">  
+                                <button class="btn-shop"><span>Add to cart</span><img src="https://i.cloudup.com/2ZAX3hVsBE-3000x3000.png" height="62" width="62"></button>
+                            </div>
+
+                            <div class="lien-shop ">
+                                <a class="lien m-2" href="#"><img src="./asset/page-accueil/share-white.svg" alt="share"><p class="text ms-1">Share</p></a>
+                                <a class="lien m-2" href="#"><img src="./asset/page-accueil/compare-white.svg" alt="compare"><p class="text ms-1">Compare</p></a>
+                                <a class="lien m-2" href="#"><img src="./asset/page-accueil/heart-white.svg" alt="heart"><p class="text ms-1">Like</p></a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+<!--? -----------------------------------------------Septieme card-------------------------------------------- -->
+
+                <div class="card card-btn card-btn m-2" style="width: 18rem;">
+
+                    <div class="promo">
+                        <p class="nbr-promo">-50%</p>
+                    </div>
+
+                    <img src="./asset/page-accueil/product-7.svg" class="img" alt="product-7">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">Pingky</h5>
+
+                        <p class="card-text">Cute bed set</p>
+
+                        <div class="ligne-prix d-flex flex-nowrap">
+                            <p class="prix-promo">Rp 7.000.000</p>
+                            <p class="prix">Pr 14.000.000</p>
+                        </div>
+
+                    </div>
+
+<!-- ------------------------------------------------Card cachée-------------------------------------------- -->
+
+                    <div class="card card-shop" style="width: 18rem;">
+                                        
+                        <div class="card-body">
+
+                            <div class="cont">  
+                                <button class="btn-shop"><span>Add to cart</span><img src="https://i.cloudup.com/2ZAX3hVsBE-3000x3000.png" height="62" width="62"></button>
+                            </div>
+
+                            <div class="lien-shop ">
+                                <a class="lien m-2" href="#"><img src="./asset/page-accueil/share-white.svg" alt="share"><p class="text ms-1">Share</p></a>
+                                <a class="lien m-2" href="#"><img src="./asset/page-accueil/compare-white.svg" alt="compare"><p class="text ms-1">Compare</p></a>
+                                <a class="lien m-2" href="#"><img src="./asset/page-accueil/heart-white.svg" alt="heart"><p class="text ms-1">Like</p></a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+<!--? -----------------------------------------------Huitieme card-------------------------------------------- -->
+
+                <div class="card card-btn card-btn m-2" style="width: 18rem;">
+
+                    <div class="new">
+                        <p class="text-new">NEW</p>
+                    </div>
+
+                    <img src="./asset/page-accueil/product-8.svg" class="img" alt="product-8">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">Potty</h5>
+                        <p class="card-text">Minimalist flower pot</p>
+                        <p class="prix-promo">Rp 500.000</p>
+
+                    </div>
+                
+                    
+<!-- ------------------------------------------------Card cachée-------------------------------------------- -->
+
+                    <div class="card card-shop" style="width: 18rem;">
+                                                    
+                        <div class="card-body">
+
+                            <div class="cont">  
+                                <button class="btn-shop"><span>Add to cart</span><img src="https://i.cloudup.com/2ZAX3hVsBE-3000x3000.png" height="62" width="62"></button>
+                            </div>
+
+                            <div class="lien-shop ">
+                                <a class="lien m-2" href="#"><img src="./asset/page-accueil/share-white.svg" alt="share"><p class="text ms-1">Share</p></a>
+                                <a class="lien m-2" href="#"><img src="./asset/page-accueil/compare-white.svg" alt="compare"><p class="text ms-1">Compare</p></a>
+                                <a class="lien m-2" href="#"><img src="./asset/page-accueil/heart-white.svg" alt="heart"><p class="text ms-1">Like</p></a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+<!--*----------------------------------------------Second ligne------------------------------------------- -->
+
+            <div class="col-12 d-flex flex-nowrap justify-content-center align-items-center">
+
+<!--? -----------------------------------------------Cinquieme card-------------------------------------------- -->
+
+                <div class="card card-btn m-2" style="width: 18rem;">
+
+                    <img src="./asset/page-accueil/product-5.svg" class="img" alt="product-5">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">Grifo</h5>
+                        <p class="card-text">Night lamp</p>
+                        <p class="prix-promo">Rp 1.500.000</p>
+
+                    </div>
+
+<!-- ------------------------------------------------Card cachée-------------------------------------------- -->
+
+                    <div class="card card-shop" style="width: 18rem;">
+                                        
+                        <div class="card-body">
+
+                            <div class="cont">  
+                                <button class="btn-shop"><span>Add to cart</span><img src="https://i.cloudup.com/2ZAX3hVsBE-3000x3000.png" height="62" width="62"></button>
+                            </div>
+
+                            <div class="lien-shop ">
+                                <a class="lien m-2" href="#"><img src="./asset/page-accueil/share-white.svg" alt="share"><p class="text ms-1">Share</p></a>
+                                <a class="lien m-2" href="#"><img src="./asset/page-accueil/compare-white.svg" alt="compare"><p class="text ms-1">Compare</p></a>
+                                <a class="lien m-2" href="#"><img src="./asset/page-accueil/heart-white.svg" alt="heart"><p class="text ms-1">Like</p></a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+<!--? -----------------------------------------------Sixieme card-------------------------------------------- -->
+
+                <div class="card card-btn m-2" style="width: 18rem;">
+
+                    <div class="new">
+                        <p class="text-new">NEW</p>
+                    </div>
+
+                    <img src="./asset/page-accueil/product-6.svg" class="img" alt="produc-6">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">Muggo</h5>
+                        <p class="card-text">Small mug</p>
+                        <p class="prix-promo">Rp 150.000</p>
+
+                    </div>
+
+<!-- ------------------------------------------------Card cachée-------------------------------------------- -->
+
+                    <div class="card card-shop" style="width: 18rem;">
+                                        
+                        <div class="card-body">
+
+                            <div class="cont">  
+                                <button class="btn-shop"><span>Add to cart</span><img src="https://i.cloudup.com/2ZAX3hVsBE-3000x3000.png" height="62" width="62"></button>
+                            </div>
+
+                            <div class="lien-shop ">
+                                <a class="lien m-2" href="#"><img src="./asset/page-accueil/share-white.svg" alt="share"><p class="text ms-1">Share</p></a>
+                                <a class="lien m-2" href="#"><img src="./asset/page-accueil/compare-white.svg" alt="compare"><p class="text ms-1">Compare</p></a>
+                                <a class="lien m-2" href="#"><img src="./asset/page-accueil/heart-white.svg" alt="heart"><p class="text ms-1">Like</p></a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+<!--? -----------------------------------------------Septieme card-------------------------------------------- -->
+
+                <div class="card card-btn card-btn m-2" style="width: 18rem;">
+
+                    <div class="promo">
+                        <p class="nbr-promo">-50%</p>
+                    </div>
+
+                    <img src="./asset/page-accueil/product-7.svg" class="img" alt="product-7">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">Pingky</h5>
+
+                        <p class="card-text">Cute bed set</p>
+
+                        <div class="ligne-prix d-flex flex-nowrap">
+                            <p class="prix-promo">Rp 7.000.000</p>
+                            <p class="prix">Pr 14.000.000</p>
+                        </div>
+
+                    </div>
+
+<!-- ------------------------------------------------Card cachée-------------------------------------------- -->
+
+                    <div class="card card-shop" style="width: 18rem;">
+                                        
+                        <div class="card-body">
+
+                            <div class="cont">  
+                                <button class="btn-shop"><span>Add to cart</span><img src="https://i.cloudup.com/2ZAX3hVsBE-3000x3000.png" height="62" width="62"></button>
+                            </div>
+
+                            <div class="lien-shop ">
+                                <a class="lien m-2" href="#"><img src="./asset/page-accueil/share-white.svg" alt="share"><p class="text ms-1">Share</p></a>
+                                <a class="lien m-2" href="#"><img src="./asset/page-accueil/compare-white.svg" alt="compare"><p class="text ms-1">Compare</p></a>
+                                <a class="lien m-2" href="#"><img src="./asset/page-accueil/heart-white.svg" alt="heart"><p class="text ms-1">Like</p></a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+<!--? -----------------------------------------------Huitieme card-------------------------------------------- -->
+
+                <div class="card card-btn card-btn m-2" style="width: 18rem;">
+
+                    <div class="new">
+                        <p class="text-new">NEW</p>
+                    </div>
+
+                    <img src="./asset/page-accueil/product-8.svg" class="img" alt="product-8">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">Potty</h5>
+                        <p class="card-text">Minimalist flower pot</p>
+                        <p class="prix-promo">Rp 500.000</p>
+
+                    </div>
+                
+                    
+        <!-- ------------------------------------------------Card cachée-------------------------------------------- -->
+
+                    <div class="card card-shop" style="width: 18rem;">
+                                                    
+                        <div class="card-body">
+
+                            <div class="cont">  
+                                <button class="btn-shop"><span>Add to cart</span><img src="https://i.cloudup.com/2ZAX3hVsBE-3000x3000.png" height="62" width="62"></button>
+                            </div>
+
+                            <div class="lien-shop ">
+                                <a class="lien m-2" href="#"><img src="./asset/page-accueil/share-white.svg" alt="share"><p class="text ms-1">Share</p></a>
+                                <a class="lien m-2" href="#"><img src="./asset/page-accueil/compare-white.svg" alt="compare"><p class="text ms-1">Compare</p></a>
+                                <a class="lien m-2" href="#"><img src="./asset/page-accueil/heart-white.svg" alt="heart"><p class="text ms-1">Like</p></a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+<!--*----------------------------------------------Troisieme ligne------------------------------------------- -->
+
+            <div class="col-12 d-flex flex-nowrap justify-content-center align-items-center">
+
+<!--? -----------------------------------------------Neuvieme card-------------------------------------------- -->
+        
+                        <div class="card card-btn m-2" style="width: 18rem;">
+        
+                            <img src="./asset/page-accueil/product-5.svg" class="img" alt="product-5">
+        
+                            <div class="card-body">
+        
+                                <h5 class="card-title">Grifo</h5>
+                                <p class="card-text">Night lamp</p>
+                                <p class="prix-promo">Rp 1.500.000</p>
+        
+                            </div>
+        
+<!-- ------------------------------------------------Card cachée-------------------------------------------- -->
+        
+                            <div class="card card-shop" style="width: 18rem;">
+                                                
+                                <div class="card-body">
+        
+                                    <div class="cont">  
+                                        <button class="btn-shop"><span>Add to cart</span><img src="https://i.cloudup.com/2ZAX3hVsBE-3000x3000.png" height="62" width="62"></button>
+                                    </div>
+        
+                                    <div class="lien-shop ">
+                                        <a class="lien m-2" href="#"><img src="./asset/page-accueil/share-white.svg" alt="share"><p class="text ms-1">Share</p></a>
+                                        <a class="lien m-2" href="#"><img src="./asset/page-accueil/compare-white.svg" alt="compare"><p class="text ms-1">Compare</p></a>
+                                        <a class="lien m-2" href="#"><img src="./asset/page-accueil/heart-white.svg" alt="heart"><p class="text ms-1">Like</p></a>
+                                    </div>
+        
+                                </div>
+        
+                            </div>
+        
+                        </div>
+        
+<!--? -----------------------------------------------Dixieme card-------------------------------------------- -->
+        
+                        <div class="card card-btn m-2" style="width: 18rem;">
+        
+                            <div class="new">
+                                <p class="text-new">NEW</p>
+                            </div>
+        
+                            <img src="./asset/page-accueil/product-6.svg" class="img" alt="produc-6">
+        
+                            <div class="card-body">
+        
+                                <h5 class="card-title">Muggo</h5>
+                                <p class="card-text">Small mug</p>
+                                <p class="prix-promo">Rp 150.000</p>
+        
+                            </div>
+        
+<!-- ------------------------------------------------Card cachée-------------------------------------------- -->
+        
+                            <div class="card card-shop" style="width: 18rem;">
+                                                
+                                <div class="card-body">
+        
+                                    <div class="cont">  
+                                        <button class="btn-shop"><span>Add to cart</span><img src="https://i.cloudup.com/2ZAX3hVsBE-3000x3000.png" height="62" width="62"></button>
+                                    </div>
+        
+                                    <div class="lien-shop ">
+                                        <a class="lien m-2" href="#"><img src="./asset/page-accueil/share-white.svg" alt="share"><p class="text ms-1">Share</p></a>
+                                        <a class="lien m-2" href="#"><img src="./asset/page-accueil/compare-white.svg" alt="compare"><p class="text ms-1">Compare</p></a>
+                                        <a class="lien m-2" href="#"><img src="./asset/page-accueil/heart-white.svg" alt="heart"><p class="text ms-1">Like</p></a>
+                                    </div>
+        
+                                </div>
+        
+                            </div>
+        
+                        </div>
+        
+<!--? -----------------------------------------------Onzieme card-------------------------------------------- -->
+        
+                        <div class="card card-btn card-btn m-2" style="width: 18rem;">
+        
+                            <div class="promo">
+                                <p class="nbr-promo">-50%</p>
+                            </div>
+        
+                            <img src="./asset/page-accueil/product-7.svg" class="img" alt="product-7">
+        
+                            <div class="card-body">
+        
+                                <h5 class="card-title">Pingky</h5>
+        
+                                <p class="card-text">Cute bed set</p>
+        
+                                <div class="ligne-prix d-flex flex-nowrap">
+                                    <p class="prix-promo">Rp 7.000.000</p>
+                                    <p class="prix">Pr 14.000.000</p>
+                                </div>
+        
+                            </div>
+        
+<!-- ------------------------------------------------Card cachée-------------------------------------------- -->
+        
+                            <div class="card card-shop" style="width: 18rem;">
+                                                
+                                <div class="card-body">
+        
+                                    <div class="cont">  
+                                        <button class="btn-shop"><span>Add to cart</span><img src="https://i.cloudup.com/2ZAX3hVsBE-3000x3000.png" height="62" width="62"></button>
+                                    </div>
+        
+                                    <div class="lien-shop ">
+                                        <a class="lien m-2" href="#"><img src="./asset/page-accueil/share-white.svg" alt="share"><p class="text ms-1">Share</p></a>
+                                        <a class="lien m-2" href="#"><img src="./asset/page-accueil/compare-white.svg" alt="compare"><p class="text ms-1">Compare</p></a>
+                                        <a class="lien m-2" href="#"><img src="./asset/page-accueil/heart-white.svg" alt="heart"><p class="text ms-1">Like</p></a>
+                                    </div>
+        
+                                </div>
+        
+                            </div>
+        
+                        </div>
+        
+<!--? -----------------------------------------------Douzieme card-------------------------------------------- -->
+        
+                        <div class="card card-btn card-btn m-2" style="width: 18rem;">
+        
+                            <div class="new">
+                                <p class="text-new">NEW</p>
+                            </div>
+        
+                            <img src="./asset/page-accueil/product-8.svg" class="img" alt="product-8">
+        
+                            <div class="card-body">
+        
+                                <h5 class="card-title">Potty</h5>
+                                <p class="card-text">Minimalist flower pot</p>
+                                <p class="prix-promo">Rp 500.000</p>
+        
+                            </div>
+                        
+                            
+<!-- ------------------------------------------------Card cachée-------------------------------------------- -->
+        
+                            <div class="card card-shop" style="width: 18rem;">
+                                                            
+                                <div class="card-body">
+        
+                                    <div class="cont">  
+                                        <button class="btn-shop"><span>Add to cart</span><img src="https://i.cloudup.com/2ZAX3hVsBE-3000x3000.png" height="62" width="62"></button>
+                                    </div>
+        
+                                    <div class="lien-shop ">
+                                        <a class="lien m-2" href="#"><img src="./asset/page-accueil/share-white.svg" alt="share"><p class="text ms-1">Share</p></a>
+                                        <a class="lien m-2" href="#"><img src="./asset/page-accueil/compare-white.svg" alt="compare"><p class="text ms-1">Compare</p></a>
+                                        <a class="lien m-2" href="#"><img src="./asset/page-accueil/heart-white.svg" alt="heart"><p class="text ms-1">Like</p></a>
+                                    </div>
+        
+                                </div>
+        
+                            </div>
+        
+                        </div>
+        
+                    </div>
+
+        </div>
+
+
+
+
+
+
+
+<!--! ------------------------------------------------FOOTER------------------------------------------------ -->
+
+        <div class="row footer">
+
+            <div class="col-4 footer-left">
+
+                <h6 class="titre">Funiro.</h6>
+
+                <div class="adress-bloc">
+
+                    <p class="adress">400 University Drive Suite 200 Coral</p>
+                    <p class="adress">Gables,</p>
+                    <p class="adress">FL 33134 USA</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-2 d-flex flex-column footer-milieu">
+
+                <p class="grey-title">Links</p>
+
+                <a class="lien" href="#home">Home</a>
+                <a class="lien" href="#">Shop</a>
+                <a class="lien" href="#">About</a>
+                <a class="lien" href="#">Contact</a>
+            </div>
+
+            <div class="col-2 d-flex flex-column footer-milieu">
+
+                <p class="grey-title">Help</p>
+
+                <a class="lien" href="#">Payment Options</a>
+                <a class="lien" href="#">Returns</a>
+                <a class="lien" href="#">Privacy Policies</a>
+
+            </div>
+
+            <div class="col-4 footer-right">
+
+                <p class="grey-title">Newsletter</p>
+
+                <form class="newsletter">
+                    <input type="email" id="email" name="email" placeholder="Enter Your Email Adress" required>
+                    <input type="submit" id="submit" value="Subscribe">
+                </form>
+
+            </div>
+
+            <div class="col-12 barre"></div>
+
+            <div class="col-12 mt-5">
+                <p class="text-footer">2023 furino. All rights reververd</p>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+<script src="./javascript/layouts/navbar.js"></script>
+<script src="./javascript/components/card.js"></script>
+
+
+</body>
+</html>

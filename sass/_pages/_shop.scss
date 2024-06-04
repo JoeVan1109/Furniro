@@ -1,0 +1,49 @@
+@import "../_base/typography";
+@import "../_utils/variables";
+
+
+.container{
+    font-family: "Poppins", sans-serif;
+
+    .banniere-img{
+        .banniere-shop{
+            position: relative;
+            .img-baniniere{
+                
+            }
+            .bloc-banniere{
+                position: absolute;
+                top: 50%;
+            }
+        }
+        .banniere-outils{
+            width: 100%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background-color: $grey-yellow;
+
+            .icone-filter{
+                margin: 1rem;
+                height: 20px;
+            }
+            .text-filter{
+                margin: 1rem;
+                height: 20px;
+            }
+            .icone-point{
+                margin: 1rem;
+                height: 20px;
+            }
+            .icone-carre{
+                margin: 1rem;
+                height: 20px;
+                border-right: solid 2px $grey;
+                padding-right: 30px;
+            }
+            .text-showing{
+                margin: 1rem;
+                height: 20px;
+            }
+        }
+    }
+}
