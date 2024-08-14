@@ -19,7 +19,7 @@
         .banniere-outils{
             width: 100%;
             padding: 1% 9% 1% 9%;
-            background-color: $grey-yellow;
+            background-color: $light-yellow;
 
             .outils-left{
                 .icone-filter{
@@ -84,5 +84,34 @@
             background-color: $yellow;
             color: white;
         }
+    }
+
+    .barre-after-footer {
+
+        height: 260px;
+
+        background-color: $light-yellow;
+
+        .icone-barre-after-footer{
+        
+        }
+
+        .bloc-barre-after-footer{
+        
+
+            .sous-title-barre-after-footer{
+
+                color: $dark-grey;
+
+                margin: 0 0 0 15px;
+            }
+            .text-barre-after-footer{
+
+                color: $grey;
+
+                margin: 0 0 0 15px;
+            }
+        }
+        
     }
 }

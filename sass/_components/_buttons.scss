@@ -1,0 +1,30 @@
+.product-page {
+
+    .btn-nbr-product {
+
+        color: $dark-grey;
+
+        margin-left: 10px;
+
+        border-bottom: 1px solid $dark-grey;
+
+        border-top: none;
+        border-left: none;
+        border-right: none;
+
+        background-color: transparent;
+
+        transition-duration: 0.7s;
+
+    }
+
+    .btn-nbr-product:hover {
+
+        border: none;
+
+        background-color: $dark-grey;
+
+        color: white;
+
+    }
+}

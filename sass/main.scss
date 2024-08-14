@@ -1,27 +1,30 @@
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+// Variables, functions, and mixins (should be first as they might be used in other files)
+@import "./_utils/variables";
+@import "./_utils/functions";
+@import "./_utils/mixins";
 
-
-
+// Base styles
 @import "./_base/typography";
 
+// Bootstrap (after variables but before custom components)
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Custom components
 @import "./_components/buttons";
 @import "./_components/card";
 @import "./_components/carousel";
 
+// Layout
 @import "./_layout/header";
 @import "./_layout/sidebar";
 @import "./_layout/footer";
 
-@import "./_pages/blog";
-@import "./_pages/checkout";
-@import "./_pages/contact";
+// Pages (specific page styles last)
 @import "./_pages/home";
-@import "./_pages/panier-page";
-@import "./_pages/product-comparison";
+@import "./_pages/blog";
 @import "./_pages/shop";
 @import "./_pages/single-product";
-
-@import "./_utils/functions";
-@import "./_utils/mixins";
-@import "./_utils/variables";
-
+@import "./_pages/product-comparison";
+@import "./_pages/panier-page";
+@import "./_pages/checkout";
+@import "./_pages/contact";
